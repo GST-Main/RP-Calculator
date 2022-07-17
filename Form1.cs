@@ -93,7 +93,7 @@ namespace RP_Calculator
 
 			foreach ((double, Label) e in ffo)
 			{
-				string str = string.Format("{0:0.##}", CashPerRP * e.Item1) + " ¿ø";
+				string str = string.Format("{0:0}", CashPerRP * e.Item1) + " ¿ø";
 				e.Item2.Text = str;
 			}
 		}

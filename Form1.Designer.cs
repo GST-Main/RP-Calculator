@@ -240,43 +240,43 @@
 			this.groupBox3.Controls.Add(this.label5);
 			this.groupBox3.Location = new System.Drawing.Point(181, 104);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(161, 90);
+			this.groupBox3.Size = new System.Drawing.Size(131, 90);
 			this.groupBox3.TabIndex = 16;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "자주 사용";
 			// 
 			// label_ToKRW975
 			// 
-			this.label_ToKRW975.Location = new System.Drawing.Point(75, 64);
+			this.label_ToKRW975.Location = new System.Drawing.Point(65, 64);
 			this.label_ToKRW975.Name = "label_ToKRW975";
-			this.label_ToKRW975.Size = new System.Drawing.Size(80, 15);
+			this.label_ToKRW975.Size = new System.Drawing.Size(60, 15);
 			this.label_ToKRW975.TabIndex = 21;
 			this.label_ToKRW975.Text = "-";
 			this.label_ToKRW975.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// label_ToKRW1350
 			// 
-			this.label_ToKRW1350.Location = new System.Drawing.Point(75, 49);
+			this.label_ToKRW1350.Location = new System.Drawing.Point(65, 49);
 			this.label_ToKRW1350.Name = "label_ToKRW1350";
-			this.label_ToKRW1350.Size = new System.Drawing.Size(80, 15);
+			this.label_ToKRW1350.Size = new System.Drawing.Size(60, 15);
 			this.label_ToKRW1350.TabIndex = 20;
 			this.label_ToKRW1350.Text = "-";
 			this.label_ToKRW1350.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// label_ToKRW1820
 			// 
-			this.label_ToKRW1820.Location = new System.Drawing.Point(75, 34);
+			this.label_ToKRW1820.Location = new System.Drawing.Point(65, 34);
 			this.label_ToKRW1820.Name = "label_ToKRW1820";
-			this.label_ToKRW1820.Size = new System.Drawing.Size(80, 15);
+			this.label_ToKRW1820.Size = new System.Drawing.Size(60, 15);
 			this.label_ToKRW1820.TabIndex = 19;
 			this.label_ToKRW1820.Text = "-";
 			this.label_ToKRW1820.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// label_ToKRW3250
 			// 
-			this.label_ToKRW3250.Location = new System.Drawing.Point(75, 19);
+			this.label_ToKRW3250.Location = new System.Drawing.Point(65, 19);
 			this.label_ToKRW3250.Name = "label_ToKRW3250";
-			this.label_ToKRW3250.Size = new System.Drawing.Size(80, 15);
+			this.label_ToKRW3250.Size = new System.Drawing.Size(60, 15);
 			this.label_ToKRW3250.TabIndex = 18;
 			this.label_ToKRW3250.Text = "-";
 			this.label_ToKRW3250.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -312,7 +312,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(354, 221);
+			this.ClientSize = new System.Drawing.Size(324, 216);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.label3);

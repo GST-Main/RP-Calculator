@@ -102,7 +102,7 @@ namespace RP_Calculator
 		{
 			if (textBox_InputRP.Text != "")
 			{
-				string s = string.Format("{0:0.##}", CashPerRP * Double.Parse(textBox_InputRP.Text));
+				string s = string.Format("{0:#,###.##}", CashPerRP * Double.Parse(textBox_InputRP.Text));
 				textBox_Result.Text = s;
 			}
 			else

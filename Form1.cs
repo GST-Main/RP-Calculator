@@ -47,45 +47,55 @@ namespace RP_Calculator
 		private void radio_4900_CheckedChanged(object sender, EventArgs e)
 		{
 			selectedChaargedCash = ChargedCash._4900;
-			update_textBox_perRP();
+			update_whenRadioChanged();
 		}
 
 		private void radio_9900_CheckedChanged(object sender, EventArgs e)
 		{
 			selectedChaargedCash = ChargedCash._9900;
-			update_textBox_perRP();
+			update_whenRadioChanged();
 		}
 
 		private void radio_19900_CheckedChanged(object sender, EventArgs e)
 		{
 			selectedChaargedCash = ChargedCash._19900;
-			update_textBox_perRP();
+			update_whenRadioChanged();
 		}
 
 		private void radio_35000_CheckedChanged(object sender, EventArgs e)
 		{
 			selectedChaargedCash = ChargedCash._35000;
-			update_textBox_perRP();
+			update_whenRadioChanged();
 		}
 
 		private void radio_49900_CheckedChanged(object sender, EventArgs e)
 		{
 			selectedChaargedCash = ChargedCash._49900;
-			update_textBox_perRP();
+			update_whenRadioChanged();
 		}
 
 		private void radio_99000_CheckedChanged(object sender, EventArgs e)
 		{
 			selectedChaargedCash = ChargedCash._99000;
-			update_textBox_perRP();
+			update_whenRadioChanged();
 		}
 
-		private void update_textBox_perRP()
+		private void update_whenRadioChanged()
 		{
 			string s = string.Format("{0:0.000}", CashPerRP);
 			textBox_perRP.Text = s;
 
 			textBox_InputRP_TextChanged(null, EventArgs.Empty);
+
+			//var foo = new double[] { 3250, 1820, 1350, 975 };
+			//var bar = new Label[] { label_ToKRW3250, label_ToKRW1820, label_ToKRW1350, label_ToKRW975 };
+			var ffo = new (double, Label)[] { (3250, label_ToKRW3250), (1820, label_ToKRW1820), (1350, label_ToKRW1350), (975, label_ToKRW975) };
+
+			foreach ((double, Label) e in ffo)
+			{
+				string str = string.Format("{0:0.##}", CashPerRP * e.Item1) + " ¿ø";
+				e.Item2.Text = str;
+			}
 		}
 
 		private void textBox_InputRP_TextChanged(object sender, EventArgs e)

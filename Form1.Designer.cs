@@ -43,7 +43,19 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.textBox_Result = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label_ToKRW975 = new System.Windows.Forms.Label();
+			this.label_ToKRW1350 = new System.Windows.Forms.Label();
+			this.label_ToKRW1820 = new System.Windows.Forms.Label();
+			this.label_ToKRW3250 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
+			this.groupBox2.SuspendLayout();
+			this.groupBox3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// radio_4900
@@ -128,14 +140,14 @@
 			this.groupBox1.Controls.Add(this.radio_35000);
 			this.groupBox1.Location = new System.Drawing.Point(12, 12);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(200, 168);
+			this.groupBox1.Size = new System.Drawing.Size(163, 168);
 			this.groupBox1.TabIndex = 6;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "충전 금액";
 			// 
 			// textBox_InputRP
 			// 
-			this.textBox_InputRP.Location = new System.Drawing.Point(231, 12);
+			this.textBox_InputRP.Location = new System.Drawing.Point(6, 22);
 			this.textBox_InputRP.Name = "textBox_InputRP";
 			this.textBox_InputRP.Size = new System.Drawing.Size(86, 23);
 			this.textBox_InputRP.TabIndex = 7;
@@ -145,7 +157,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(323, 15);
+			this.label1.Location = new System.Drawing.Point(98, 25);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(21, 15);
 			this.label1.TabIndex = 8;
@@ -179,7 +191,7 @@
 			// 
 			// textBox_Result
 			// 
-			this.textBox_Result.Location = new System.Drawing.Point(231, 41);
+			this.textBox_Result.Location = new System.Drawing.Point(6, 51);
 			this.textBox_Result.Name = "textBox_Result";
 			this.textBox_Result.ReadOnly = true;
 			this.textBox_Result.Size = new System.Drawing.Size(86, 23);
@@ -188,24 +200,124 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(323, 44);
+			this.label4.Location = new System.Drawing.Point(98, 54);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(19, 15);
 			this.label4.TabIndex = 13;
 			this.label4.Text = "원";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(6, 19);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(53, 15);
+			this.label5.TabIndex = 14;
+			this.label5.Text = "3250 RP";
+			// 
+			// groupBox2
+			// 
+			this.groupBox2.Controls.Add(this.textBox_InputRP);
+			this.groupBox2.Controls.Add(this.label1);
+			this.groupBox2.Controls.Add(this.label4);
+			this.groupBox2.Controls.Add(this.textBox_Result);
+			this.groupBox2.Location = new System.Drawing.Point(181, 12);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(131, 86);
+			this.groupBox2.TabIndex = 15;
+			this.groupBox2.TabStop = false;
+			this.groupBox2.Text = "계산";
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.label_ToKRW975);
+			this.groupBox3.Controls.Add(this.label_ToKRW1350);
+			this.groupBox3.Controls.Add(this.label_ToKRW1820);
+			this.groupBox3.Controls.Add(this.label_ToKRW3250);
+			this.groupBox3.Controls.Add(this.label8);
+			this.groupBox3.Controls.Add(this.label7);
+			this.groupBox3.Controls.Add(this.label6);
+			this.groupBox3.Controls.Add(this.label5);
+			this.groupBox3.Location = new System.Drawing.Point(181, 104);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(161, 90);
+			this.groupBox3.TabIndex = 16;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "자주 사용";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(6, 34);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(53, 15);
+			this.label6.TabIndex = 15;
+			this.label6.Text = "1820 RP";
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(6, 49);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(53, 15);
+			this.label7.TabIndex = 16;
+			this.label7.Text = "1350 RP";
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(6, 64);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(46, 15);
+			this.label8.TabIndex = 17;
+			this.label8.Text = "975 RP";
+			// 
+			// label_ToKRW975
+			// 
+			this.label_ToKRW975.AutoSize = true;
+			this.label_ToKRW975.Location = new System.Drawing.Point(75, 64);
+			this.label_ToKRW975.Name = "label_ToKRW975";
+			this.label_ToKRW975.Size = new System.Drawing.Size(12, 15);
+			this.label_ToKRW975.TabIndex = 21;
+			this.label_ToKRW975.Text = "-";
+			// 
+			// label_ToKRW1350
+			// 
+			this.label_ToKRW1350.AutoSize = true;
+			this.label_ToKRW1350.Location = new System.Drawing.Point(75, 49);
+			this.label_ToKRW1350.Name = "label_ToKRW1350";
+			this.label_ToKRW1350.Size = new System.Drawing.Size(12, 15);
+			this.label_ToKRW1350.TabIndex = 20;
+			this.label_ToKRW1350.Text = "-";
+			// 
+			// label_ToKRW1820
+			// 
+			this.label_ToKRW1820.AutoSize = true;
+			this.label_ToKRW1820.Location = new System.Drawing.Point(75, 34);
+			this.label_ToKRW1820.Name = "label_ToKRW1820";
+			this.label_ToKRW1820.Size = new System.Drawing.Size(12, 15);
+			this.label_ToKRW1820.TabIndex = 19;
+			this.label_ToKRW1820.Text = "-";
+			// 
+			// label_ToKRW3250
+			// 
+			this.label_ToKRW3250.AutoSize = true;
+			this.label_ToKRW3250.Location = new System.Drawing.Point(75, 19);
+			this.label_ToKRW3250.Name = "label_ToKRW3250";
+			this.label_ToKRW3250.Size = new System.Drawing.Size(12, 15);
+			this.label_ToKRW3250.TabIndex = 18;
+			this.label_ToKRW3250.Text = "-";
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(354, 221);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.textBox_Result);
+			this.Controls.Add(this.groupBox3);
+			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.textBox_perRP);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.textBox_InputRP);
 			this.Controls.Add(this.groupBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -216,6 +328,10 @@
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			this.groupBox2.ResumeLayout(false);
+			this.groupBox2.PerformLayout();
+			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -237,5 +353,15 @@
 		private Label label3;
 		private TextBox textBox_Result;
 		private Label label4;
+		private Label label5;
+		private GroupBox groupBox2;
+		private GroupBox groupBox3;
+		private Label label_ToKRW975;
+		private Label label_ToKRW1350;
+		private Label label_ToKRW1820;
+		private Label label_ToKRW3250;
+		private Label label8;
+		private Label label7;
+		private Label label6;
 	}
 }

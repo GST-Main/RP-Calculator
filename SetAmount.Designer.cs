@@ -30,11 +30,11 @@
 		{
 			this.textBox_setKRW0 = new System.Windows.Forms.TextBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.textBox_setKRW1 = new System.Windows.Forms.TextBox();
-			this.textBox_setKRW2 = new System.Windows.Forms.TextBox();
-			this.textBox_setKRW3 = new System.Windows.Forms.TextBox();
-			this.textBox_setKRW4 = new System.Windows.Forms.TextBox();
 			this.textBox_setKRW5 = new System.Windows.Forms.TextBox();
+			this.textBox_setKRW4 = new System.Windows.Forms.TextBox();
+			this.textBox_setKRW3 = new System.Windows.Forms.TextBox();
+			this.textBox_setKRW2 = new System.Windows.Forms.TextBox();
+			this.textBox_setKRW1 = new System.Windows.Forms.TextBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.textBox_setRP5 = new System.Windows.Forms.TextBox();
 			this.textBox_setRP4 = new System.Windows.Forms.TextBox();
@@ -55,6 +55,7 @@
 			this.textBox_setKRW0.Name = "textBox_setKRW0";
 			this.textBox_setKRW0.Size = new System.Drawing.Size(100, 23);
 			this.textBox_setKRW0.TabIndex = 0;
+			this.textBox_setKRW0.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
 			// groupBox1
 			// 
@@ -71,26 +72,13 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "충전 금액 (원)";
 			// 
-			// textBox_setKRW1
+			// textBox_setKRW5
 			// 
-			this.textBox_setKRW1.Location = new System.Drawing.Point(6, 51);
-			this.textBox_setKRW1.Name = "textBox_setKRW1";
-			this.textBox_setKRW1.Size = new System.Drawing.Size(100, 23);
-			this.textBox_setKRW1.TabIndex = 0;
-			// 
-			// textBox_setKRW2
-			// 
-			this.textBox_setKRW2.Location = new System.Drawing.Point(6, 80);
-			this.textBox_setKRW2.Name = "textBox_setKRW2";
-			this.textBox_setKRW2.Size = new System.Drawing.Size(100, 23);
-			this.textBox_setKRW2.TabIndex = 0;
-			// 
-			// textBox_setKRW3
-			// 
-			this.textBox_setKRW3.Location = new System.Drawing.Point(6, 109);
-			this.textBox_setKRW3.Name = "textBox_setKRW3";
-			this.textBox_setKRW3.Size = new System.Drawing.Size(100, 23);
-			this.textBox_setKRW3.TabIndex = 0;
+			this.textBox_setKRW5.Location = new System.Drawing.Point(6, 167);
+			this.textBox_setKRW5.Name = "textBox_setKRW5";
+			this.textBox_setKRW5.Size = new System.Drawing.Size(100, 23);
+			this.textBox_setKRW5.TabIndex = 0;
+			this.textBox_setKRW5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
 			// textBox_setKRW4
 			// 
@@ -98,13 +86,31 @@
 			this.textBox_setKRW4.Name = "textBox_setKRW4";
 			this.textBox_setKRW4.Size = new System.Drawing.Size(100, 23);
 			this.textBox_setKRW4.TabIndex = 0;
+			this.textBox_setKRW4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
-			// textBox_setKRW5
+			// textBox_setKRW3
 			// 
-			this.textBox_setKRW5.Location = new System.Drawing.Point(6, 167);
-			this.textBox_setKRW5.Name = "textBox_setKRW5";
-			this.textBox_setKRW5.Size = new System.Drawing.Size(100, 23);
-			this.textBox_setKRW5.TabIndex = 0;
+			this.textBox_setKRW3.Location = new System.Drawing.Point(6, 109);
+			this.textBox_setKRW3.Name = "textBox_setKRW3";
+			this.textBox_setKRW3.Size = new System.Drawing.Size(100, 23);
+			this.textBox_setKRW3.TabIndex = 0;
+			this.textBox_setKRW3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
+			// 
+			// textBox_setKRW2
+			// 
+			this.textBox_setKRW2.Location = new System.Drawing.Point(6, 80);
+			this.textBox_setKRW2.Name = "textBox_setKRW2";
+			this.textBox_setKRW2.Size = new System.Drawing.Size(100, 23);
+			this.textBox_setKRW2.TabIndex = 0;
+			this.textBox_setKRW2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
+			// 
+			// textBox_setKRW1
+			// 
+			this.textBox_setKRW1.Location = new System.Drawing.Point(6, 51);
+			this.textBox_setKRW1.Name = "textBox_setKRW1";
+			this.textBox_setKRW1.Size = new System.Drawing.Size(100, 23);
+			this.textBox_setKRW1.TabIndex = 0;
+			this.textBox_setKRW1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
 			// groupBox2
 			// 
@@ -127,6 +133,7 @@
 			this.textBox_setRP5.Name = "textBox_setRP5";
 			this.textBox_setRP5.Size = new System.Drawing.Size(100, 23);
 			this.textBox_setRP5.TabIndex = 0;
+			this.textBox_setRP5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
 			// textBox_setRP4
 			// 
@@ -134,6 +141,7 @@
 			this.textBox_setRP4.Name = "textBox_setRP4";
 			this.textBox_setRP4.Size = new System.Drawing.Size(100, 23);
 			this.textBox_setRP4.TabIndex = 0;
+			this.textBox_setRP4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
 			// textBox_setRP3
 			// 
@@ -141,6 +149,7 @@
 			this.textBox_setRP3.Name = "textBox_setRP3";
 			this.textBox_setRP3.Size = new System.Drawing.Size(100, 23);
 			this.textBox_setRP3.TabIndex = 0;
+			this.textBox_setRP3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
 			// textBox_setRP2
 			// 
@@ -148,6 +157,7 @@
 			this.textBox_setRP2.Name = "textBox_setRP2";
 			this.textBox_setRP2.Size = new System.Drawing.Size(100, 23);
 			this.textBox_setRP2.TabIndex = 0;
+			this.textBox_setRP2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
 			// textBox_setRP1
 			// 
@@ -155,6 +165,7 @@
 			this.textBox_setRP1.Name = "textBox_setRP1";
 			this.textBox_setRP1.Size = new System.Drawing.Size(100, 23);
 			this.textBox_setRP1.TabIndex = 0;
+			this.textBox_setRP1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
 			// textBox_setRP0
 			// 
@@ -162,6 +173,7 @@
 			this.textBox_setRP0.Name = "textBox_setRP0";
 			this.textBox_setRP0.Size = new System.Drawing.Size(100, 23);
 			this.textBox_setRP0.TabIndex = 0;
+			this.textBox_setRP0.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_setKRWRP_KeyPress);
 			// 
 			// label1
 			// 
@@ -191,6 +203,7 @@
 			this.button_ApplySetCharge.TabIndex = 5;
 			this.button_ApplySetCharge.Text = "설정";
 			this.button_ApplySetCharge.UseVisualStyleBackColor = true;
+			this.button_ApplySetCharge.Click += new System.EventHandler(this.button_ApplySetCharge_Click);
 			// 
 			// form_SetAmount
 			// 

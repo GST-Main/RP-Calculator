@@ -53,6 +53,7 @@
 			this.label8 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
+			this.button_SetAmount = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -308,11 +309,22 @@
 			this.label6.Text = "1820 RP";
 			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
+			// button_SetAmount
+			// 
+			this.button_SetAmount.Location = new System.Drawing.Point(181, 200);
+			this.button_SetAmount.Name = "button_SetAmount";
+			this.button_SetAmount.Size = new System.Drawing.Size(131, 23);
+			this.button_SetAmount.TabIndex = 17;
+			this.button_SetAmount.Text = "충전 금액 설정";
+			this.button_SetAmount.UseVisualStyleBackColor = true;
+			this.button_SetAmount.Click += new System.EventHandler(this.button_SetAmount_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(324, 216);
+			this.ClientSize = new System.Drawing.Size(324, 230);
+			this.Controls.Add(this.button_SetAmount);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.label3);
@@ -362,5 +374,6 @@
 		private Label label8;
 		private Label label7;
 		private Label label6;
+		private Button button_SetAmount;
 	}
 }

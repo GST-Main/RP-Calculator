@@ -194,6 +194,7 @@
 			this.button_CancelSetCharge.TabIndex = 4;
 			this.button_CancelSetCharge.Text = "취소";
 			this.button_CancelSetCharge.UseVisualStyleBackColor = false;
+			this.button_CancelSetCharge.Click += new System.EventHandler(this.button_CancelSetCharge_Click);
 			// 
 			// button_ApplySetCharge
 			// 
